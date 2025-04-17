@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AL~TV</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <img src="images/AL~TV.jpg" alt="AL~TV Logo" class="logo">
+        <nav class="main-nav">
+            <a href="#">Accueil</a>
+            <a href="#">Séries</a>
+            <a href="#">Films</a>
+            <a href="#">Nouveautés</a>
+            <a href="#">Ma liste</a>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h1>Bienvenue sur AL~TV</h1>
+        <p>Regardez ce que vous voulez, quand vous voulez.</p>
+    </section>
+
+    <section class="content-row">
+        <h2>Séries populaires</h2>
+        <div class="movie-row">
+            <img src="images/film1.jpg" alt="Film 1" class="movie" data-title="Film 1"
+                 data-description="Un film épique..." data-video="videos/SAISON 1 EP 1.mp4">
+            <img src="images/film2.jpg" alt="Film 2" class="movie" data-title="Film 2"
+                 data-description="Une aventure incroyable..." data-video="videos/film2.mp4">
+            <img src="images/film3.jpg" alt="Film 3" class="movie" data-title="Film 3"
+                 data-description="Drame et mystère..." data-video="videos/film3.mp4">
+            <img src="images/film4.jpg" alt="Film 4" class="movie" data-title="Film 4"
+                 data-description="Comédie légère..." data-video="videos/film4.mp4">
+        </div>
+    </section>
+
+    <!-- Modale vidéo -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="closeBtn" class="close">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+            <video id="modalVideo" controls width="100%">
+                <source src="" type="video/mp4">
+                Votre navigateur ne supporte pas la vidéo.
+            </video>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
